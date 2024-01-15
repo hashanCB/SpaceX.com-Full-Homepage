@@ -1,7 +1,6 @@
-import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Sletter from "./Letter/SLetter";
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   return (
     <div>
       <div className="flex  bg-red-800 ">
@@ -9,8 +8,8 @@ const Navbar = () => {
           <Sletter w="150" h="40" />
         </div>
 
-        <div className=" w-1/12 flex items-center justify-center">
-          <div className=" text-white">
+        <div className=" w-1/12 flex items-center justify-center ">
+          <div className=" text-white cursor-pointer" onClick={toggleSidebar}>
             <GiHamburgerMenu />
           </div>
         </div>

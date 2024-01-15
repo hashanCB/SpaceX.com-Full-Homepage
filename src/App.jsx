@@ -1,17 +1,26 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Heroview from "./components/Heroview";
+import Sildebar from "./components/Sidebar";
+import mobi from "../src/assets/Desktop_home.jpeg";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
 
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
   return (
     <div className=" overflow-x-hidden">
-      <div>
-        <Heroview />
+      <div className="relative h-[100vh] ">
+        <img src={mobi} alt="mobiview" className="  h-full  object-cover" />
+        <div className=" absolute top-0 left-0  right-0">
+          <Navbar toggleSidebar={toggleSidebar} />
+        </div>
+        <div className="">
+          {isSidebarOpen ? <Sildebar toggleSidebar={toggleSidebar} /> : null}
+        </div>
       </div>
     </div>
   );
