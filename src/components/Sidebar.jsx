@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Navbar from "./Navbar";
-import { navLinks } from "../constants/Index";
+import { navLinks, mobi_navbar } from "../constants/Index";
 
 const Sidebar = () => {
   // State to manage the navbar's visibility
@@ -29,10 +29,19 @@ const Sidebar = () => {
           ></div>
 
           <div className=" text-white mt-5">
-            <ul>
+            <ul className=" hidden sm:block  md:block lg:block xl:block ">
               {navLinks.map((link) => (
                 <li key={link.id} className=" my-4 border-b-2 border-white/10">
                   {link.title}{" "}
+                </li>
+              ))}
+            </ul>
+
+            <ul className=" sm:hidden  md:hidden lg:hidden xl:hidden">
+              {mobi_navbar.map((links) => (
+                <li key={links.id} className=" my-4 border-b-2 border-white/10">
+                  {" "}
+                  {links.title}{" "}
                 </li>
               ))}
             </ul>

@@ -10,24 +10,22 @@ module.exports = {
         dimgreenButton: "#029664",
         dimgreenText: "#58745E",
       },
-    backgroundImage: {
-        'hero-pattern': "url('/img/hero-pattern.svg')",
-       // 'footer-texture': "url('/img/footer-texture.png')",
-       },
+      backgroundImage: {
+        "hero-pattern": "url('/img/hero-pattern.svg')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      },
       fontFamily: {
         Inter: ["Inter", "sans-serif"],
-       
       },
     },
     screens: {
       xs: "480px",
       ss: "620px",
-      sm: "768px",
+      sm: "960px",
       md: "1060px",
       lg: "1200px",
       xl: "1700px",
     },
   },
   plugins: [],
- };
- 
+};
