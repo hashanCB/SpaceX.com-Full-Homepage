@@ -71,3 +71,38 @@ export const mobi_navbar = [
     title: "Shop",
   },
 ];
+
+export const desktop_nav = [
+  {
+    id: "Falcon 9",
+    title: "Falcon 9",
+  },
+  {
+    id: "Falcon Heavy",
+    title: "Falcon Heavy",
+  },
+  {
+    id: "Dragon",
+    title: "Dragon",
+  },
+  {
+    id: "Straship",
+    title: "Straship",
+  },
+  {
+    id: "Human spaceflight",
+    title: "Human spaceflight",
+  },
+  {
+    id: "Rideshare",
+    title: "Rideshare",
+  },
+  {
+    id: "Starshield",
+    title: "Strashield",
+  },
+  {
+    id: "stralink",
+    title: "stralimk",
+  },
+];

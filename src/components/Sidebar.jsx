@@ -13,7 +13,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div>
+    <div className=" mt-5 sm:mt-5">
       <Navbar toggleSidebar={toggleSidebar} />
       <div
         className={
@@ -22,13 +22,8 @@ const Sidebar = () => {
             : "ease-in-out w-[300px] duration-1000 fixed top-0 bottom-0 right-[-100%]"
         }
       >
-        <div className="flex flex-col w-full mt-0 text-right px-5">
-          <div
-            className=" flex justify-end text-[32px] text-white cursor-pointer"
-            onClick={toggleSidebar}
-          ></div>
-
-          <div className=" text-white mt-5">
+        <div className="flex flex-col w-full mt-0 text-right px-5 pt-10">
+          <div className=" text-white  mt-8 ">
             <ul className=" hidden sm:block  md:block lg:block xl:block ">
               {navLinks.map((link) => (
                 <li key={link.id} className=" my-4 border-b-2 border-white/10">
