@@ -1,4 +1,4 @@
-## SpaceX.com Inspired Full Homepage with React and Tailwind CSS
+## SpaceX.com  Full Homepage with React and Tailwind CSS
 
 This repository encompasses the complete source code and assets for a SpaceX.com-inspired homepage. Crafted using React and Tailwind CSS, this project not only replicates the SpaceX navigation bar but extends to provide a responsive and captivating design for the entire homepage.
 
